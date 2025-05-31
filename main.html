@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+        td {
+            border: 1px solid black;
+            padding: 3px;
+            text-align: center;
+            width: 15px;
+        }
+        tr {
+            height: 21px;
+        }
+        .revealed {
+            background-color: #ffffff;
+        }
+        .unrevealed {
+            background-color: #bfbfbf;
+        }
+        #time {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Settings</h2>
+    <div id="settings">
+        <label>Difficulty:</label>
+        <select name="difficulty" id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <label>Board size:</label>
+        <input type="number" id="size" name="Board size"
+        min="5" max="50" value="10">
+        <button type="button" id ="start">Start</button>
+    </div>
+    <div id="timer">
+        <p id="time"></p>
+    </div>
+    <div id="minefield"></div>
+
+    <script src="game.js"></script>
+</body>
+</html>
